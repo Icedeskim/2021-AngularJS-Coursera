@@ -1,8 +1,16 @@
-(function ()){
+(function() {
+    'use strict';
 
-angular.module()'myFirstApp', [])
+    angular.module('myFirstApp', [])
 
-controller('MyFirstController', function ())
+  .controller('MyFirstController', function ($scope) {
+    $scope.name = "Kimberly";
+    $scope.sayHello = function () {
+      return "Hello Coursera!";
+
+    };
+  });
+
 
 
 })();
