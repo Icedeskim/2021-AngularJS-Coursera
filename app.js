@@ -8,7 +8,7 @@ angular.module('NameCalculator', [])
   $scope.totalValue = 0;
 
   $scope.displayNumeric = function () {
-    var totalNameValue =
+    var totalNameValue = 0;
     calculateNumericForString($scope.name);
     $scope.totalValue = totalNameValue;
 };
