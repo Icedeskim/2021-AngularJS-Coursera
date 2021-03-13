@@ -1,27 +1,19 @@
 (function() {
     'use strict';
 
-angular.module('NameCalculator', [])
+angular.module('whatsForLunch', [])
+.controller('LunchController', LunchController);
 
-.controller('NameCalculatorController', function ($scope) {
-  $scope.name = "";
-  $scope.totalValue = 0;
+LunchController.$inject = ['$scope'];
+function LunchController($scope) {
+    $scope.name = "What's For Lunch";
+    $scope.enjoy = "Enjoy!";
 
-  $scope.displayNumeric = function () {
-    var totalNameValue = 0;
-    calculateNumericForString($scope.name);
-    $scope.totalValue = totalNameValue;
-};
+    $scope.sayMessage =function () {
+      return "Check If Too Much";
+    };
 
-function calculateNumericForString(string) {
-  var totalStringValue = 0;
-  for (var i = 0; i < string.length; i++) {
-    totalStringValue += string.charCodeAt(i);
-}
-
-  return totalStringValue;
-}
-
-});
-
-})();
+    $scope.morethan3 = function () {
+      $scope.tooMuch = "Too Much";
+    };
+    }
