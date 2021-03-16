@@ -2,14 +2,17 @@
     'use strict';
 
 angular.module('whatsForLunch', [])
-.controller('LunchController', LunchController);
+.controller('LunchCheckController(var1, var2, var3,)Controller', LunchCheckController);
 
-LunchController.$inject = ['$scope'];
-function LunchController($scope) {
-    $scope.name = "What's For Lunch";
+LunchController.$inject = ['$scope', '$filter'];
+function LunchCheckController($scope');
+
+    $scope.name = "What's For Lunch",
+      $filter.var = var <= 3;
+      {{$filter.userInput = [var <= 3]}};
     $scope.enjoy = "Enjoy!";
 
-    $scope.sayMessage =function () {
+    $scope.whatsForLunch = function (var > 3 = return) {
       return "Check If Too Much";
     };
 

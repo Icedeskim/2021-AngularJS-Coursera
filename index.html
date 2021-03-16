@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
   <meta charset="utf-8">
   <script src="angular.min.js"></script>
@@ -7,15 +7,18 @@
   <style>body { font-size: 1.3em; }</style>
   <title>Module1-Solution</title>
 </head>
-<body ng-app="whatsForLunch">
-  <h1>Check if Too Much For Lunch Assignment</h1>
+<body ng-app="whatsForLunch" align="center">
 
-  <div id="target" ng-app="whatsForLunch">
-  <div ng-controller='MsgController'>
-    {{lunch}}What's for lunch? <br />
-    {{userInput}}
-  </div>
-</div>
+  <h1>Lunch Check Assignment</h1>
+
+  <div class="container">
+  <div ng-controller='LunchCheckController'>
+  <h2>What's for lunch?</h2> <br />
+  <form ng-controller="Whats for Lunch?">
+  
+  <textarea class="form-control" rows="3" ng-model="foodName"id="foodName" value="" placeholder="What did you eat for lunch?"></textarea>
+  </form>
+
 <button ng-click="sayMessage"()>"Check If Too Much"</button> <br />
 
 
